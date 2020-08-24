@@ -1,0 +1,163 @@
+/* CSS Colors 
+--charcoal: rgba(46, 71, 86, 1);
+--light-cyan: rgba(203, 236, 246, 1);
+--forest-green-crayola: rgba(106, 169, 117, 1);
+--gunmetal: rgba(22, 37, 45, 1);
+--mango-tango: rgba(240, 129, 61, 1);
+*/
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Pontano Sans', sans-serif;
+  color:  rgba(46, 71, 86, 1);
+}
+
+/************************** Anchor Styles **************************/
+a {
+  text-decoration: none;
+}
+
+.footer-link {
+  padding: 1em 25px;
+}
+
+footer a:link, footer a:visited {
+  color: rgba(240, 129, 61, 1);
+}
+
+footer a:hover, footer a:active {
+  color: rgba(106, 169, 117, 1);
+}
+
+/***************************** Bio, Skills, Contact *****************************/
+.intro {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-row {
+  line-height: 2;
+  margin: 100px auto;
+  text-align: left;
+  width: 50%;
+  max-width: 960px;
+}
+
+.skill-row:last-of-type {
+  margin-bottom: 0;
+}
+
+.contact-me p {
+  width: 30%;
+  margin: 25px auto 40px;
+}
+
+
+/***************************** Contact Button *****************************/
+.contact-btn {
+  background: linear-gradient(45deg, rgba(46, 71, 86, 1), rgba(22, 37, 45, 1));
+  border: 1px solid rgba(46, 71, 86, 1);
+  border-radius: 10px;
+  border-style: none;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.contact-btn:link, .contact-btn:visited {
+  background: linear-gradient(45deg, rgba(46, 71, 86, 1), rgba(22, 37, 45, 1));
+  color: rgba(240, 129, 61, 1);
+}
+
+.contact-btn:hover, .contact-btn:active {
+  background:  rgba(46, 71, 86, 1);
+  color: rgba(106, 169, 117, 1);
+}
+
+/***************************** Footer *****************************/
+footer {
+  margin-top: 50px;
+  padding: 25px;
+  background-color: rgba(22, 37, 45, 1);
+}
+
+/************************* Heading styles *************************/
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 5.625rem;
+  margin: 50px auto 0;
+}
+
+h2 {
+  color:  rgba(46, 71, 86, 1);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+}
+
+h3 {
+  color: rgba(106, 169, 117, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+h1+h2 {
+  color: rgba(106, 169, 117, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  line-height: 2;
+}
+
+/**************************** HR Styles ****************************/
+hr {
+  border-style: none;
+  border-top: 10px dotted  rgba(46, 71, 86, 1);
+  margin: 50px auto;
+  width: 75px;
+}
+
+/*************************** Image Styles ***************************/
+.top {
+  background-color: rgba(203, 236, 246, 1);
+  margin-bottom: 25px;
+  padding-top: 100px;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.cloud-bottom {
+  position: absolute;
+}
+
+.cloud-top {
+  position: relative;
+  top: 50px;
+  left: 300px;
+}
+
+.profile-pic {
+  height: 200px;
+  border-radius: 50px;
+}
+
+.skills-web, .skills-dice {
+  width: 20%;
+  float: left;
+  margin-right: 30px;
+  max-width: 200px;
+  min-width: 100px;
+}
+
+.skills-guitar {
+  width: 20%;
+  float: right;
+  margin-right: 30px;
+  max-width: 200px;
+  min-width: 100px;
+}
+
+.skill-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
